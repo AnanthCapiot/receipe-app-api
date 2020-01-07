@@ -10,4 +10,4 @@ before_script: pip install docker-compose
 
 # flake8 is a linting tool
 script:
-  - docker-compose run app sh -c "django-admin.py test && flake8"
+  - docker-compose run app sh -c "python manage.py test && flake8"
